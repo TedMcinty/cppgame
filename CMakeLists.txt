@@ -1,5 +1,5 @@
 # Replace 'my_project' with the name of your project
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.15...3.28)
 project(C:/Users/eaill/OneDrive/Documents/GitHub/cppgame)
 find_package(Python 3.8 COMPONENTS Interpreter Development.Module REQUIRED)
 
