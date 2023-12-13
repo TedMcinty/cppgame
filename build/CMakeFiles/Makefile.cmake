@@ -52,4 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/my_ext.dir/DependInfo.cmake"
   "CMakeFiles/nanobind-static.dir/DependInfo.cmake"
+  "CMakeFiles/dog.dir/DependInfo.cmake"
   )

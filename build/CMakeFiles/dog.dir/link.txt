@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -Wl,-s -Wl,--gc-sections -shared  -o dog.cpython-310-x86_64-linux-gnu.so CMakeFiles/dog.dir/dog.cpp.o  libnanobind-static.a 

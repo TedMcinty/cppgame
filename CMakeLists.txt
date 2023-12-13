@@ -11,3 +11,4 @@ endif()
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/ext/nanobind)
 
 nanobind_add_module(my_ext my_ext.cpp)
+nanobind_add_module(dog dog.cpp)

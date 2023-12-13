@@ -142,6 +142,43 @@ nanobind-static/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nanobind-static.dir/build.make CMakeFiles/nanobind-static.dir/build
 .PHONY : nanobind-static/fast
 
+#=============================================================================
+# Target rules for targets named dog
+
+# Build rule for target.
+dog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dog
+.PHONY : dog
+
+# fast build rule for target.
+dog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dog.dir/build.make CMakeFiles/dog.dir/build
+.PHONY : dog/fast
+
+dog.o: dog.cpp.o
+.PHONY : dog.o
+
+# target to build an object file
+dog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dog.dir/build.make CMakeFiles/dog.dir/dog.cpp.o
+.PHONY : dog.cpp.o
+
+dog.i: dog.cpp.i
+.PHONY : dog.i
+
+# target to preprocess a source file
+dog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dog.dir/build.make CMakeFiles/dog.dir/dog.cpp.i
+.PHONY : dog.cpp.i
+
+dog.s: dog.cpp.s
+.PHONY : dog.s
+
+# target to generate assembly for a file
+dog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dog.dir/build.make CMakeFiles/dog.dir/dog.cpp.s
+.PHONY : dog.cpp.s
+
 ext/nanobind/src/common.o: ext/nanobind/src/common.cpp.o
 .PHONY : ext/nanobind/src/common.o
 
@@ -414,8 +451,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dog"
 	@echo "... my_ext"
 	@echo "... nanobind-static"
+	@echo "... dog.o"
+	@echo "... dog.i"
+	@echo "... dog.s"
 	@echo "... ext/nanobind/src/common.o"
 	@echo "... ext/nanobind/src/common.i"
 	@echo "... ext/nanobind/src/common.s"
