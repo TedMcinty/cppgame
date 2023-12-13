@@ -3,7 +3,6 @@
 #include <string>
 
 namespace nb = nanobind;
-using namespace nb::literals;
 
 struct Dog {
     std::string name;
@@ -12,7 +11,7 @@ struct Dog {
     }
 };
 
-NB_MODULE(my_ext, m) {
+NB_MODULE(dog, m) {
     nb::class_<Dog>(m, "Dog")
         .def(nb::init<>())
         .def(nb::init<const std::string &>())
