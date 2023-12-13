@@ -1,6 +1,3 @@
-[submodule "ext/ext/nanobind"]
-	path = ext/ext/nanobind
-	url = https://github.com/wjakob/nanobind
 [submodule "ext/nanobind"]
 	path = ext/nanobind
 	url = https://github.com/wjakob/nanobind
